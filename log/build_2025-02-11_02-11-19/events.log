@@ -1,0 +1,546 @@
+[0.000000] (-) TimerEvent: {}
+[0.000515] (laser_filters) JobQueued: {'identifier': 'laser_filters', 'dependencies': OrderedDict()}
+[0.000568] (rplidar_ros) JobQueued: {'identifier': 'rplidar_ros', 'dependencies': OrderedDict()}
+[0.000722] (laser_filters) JobStarted: {'identifier': 'laser_filters'}
+[0.004100] (rplidar_ros) JobStarted: {'identifier': 'rplidar_ros'}
+[0.006654] (laser_filters) JobProgress: {'identifier': 'laser_filters', 'progress': 'cmake'}
+[0.006967] (laser_filters) Command: {'cmd': ['/usr/bin/cmake', '/home/ali/lidar_ws/src/laser_filters', '-DCMAKE_INSTALL_PREFIX=/home/ali/lidar_ws/install/laser_filters'], 'cwd': '/home/ali/lidar_ws/build/laser_filters', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ali'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/ali'), ('OLDPWD', '/home/ali'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1496'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c9008729cb84ce135994bd5b67aa830e'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ali/lidar_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ali'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ali'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ali-Victus-by-HP-Gaming-Laptop-15-fa1xxx:@/tmp/.ICE-unix/1496,unix/ali-Victus-by-HP-Gaming-Laptop-15-fa1xxx:/tmp/.ICE-unix/1496'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ea457458_5fe8_441a_903d_cc40f6611112'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.118'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ali/lidar_ws/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo-11:'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ali/lidar_ws/build/laser_filters'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c9008729cb84ce135994bd5b67aa830e'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ali/lidar_ws/install/rplidar_ros:/opt/ros/humble')]), 'shell': False}
+[0.009413] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'cmake'}
+[0.009720] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'build'}
+[0.010106] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ali/lidar_ws/build/rplidar_ros', '--', '-j16', '-l16'], 'cwd': '/home/ali/lidar_ws/build/rplidar_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ali'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/ali'), ('OLDPWD', '/home/ali'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1496'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c9008729cb84ce135994bd5b67aa830e'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ali/lidar_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ali'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ali'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ali-Victus-by-HP-Gaming-Laptop-15-fa1xxx:@/tmp/.ICE-unix/1496,unix/ali-Victus-by-HP-Gaming-Laptop-15-fa1xxx:/tmp/.ICE-unix/1496'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ea457458_5fe8_441a_903d_cc40f6611112'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.118'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ali/lidar_ws/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo-11:'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ali/lidar_ws/build/rplidar_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c9008729cb84ce135994bd5b67aa830e'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ali/lidar_ws/install/rplidar_ros:/opt/ros/humble')]), 'shell': False}
+[0.061635] (laser_filters) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.066225] (rplidar_ros) StdoutLine: {'line': b'[  5%] Built target rplidar_client\n'}
+[0.068662] (rplidar_ros) StdoutLine: {'line': b'[ 52%] Built target rplidar_node\n'}
+[0.074450] (rplidar_ros) StdoutLine: {'line': b'[100%] Built target rplidar_composition\n'}
+[0.087522] (rplidar_ros) CommandEnded: {'returncode': 0}
+[0.088377] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'install'}
+[0.099612] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ali/lidar_ws/build/rplidar_ros'], 'cwd': '/home/ali/lidar_ws/build/rplidar_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ali'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/ali'), ('OLDPWD', '/home/ali'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1496'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c9008729cb84ce135994bd5b67aa830e'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ali/lidar_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ali'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ali'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ali-Victus-by-HP-Gaming-Laptop-15-fa1xxx:@/tmp/.ICE-unix/1496,unix/ali-Victus-by-HP-Gaming-Laptop-15-fa1xxx:/tmp/.ICE-unix/1496'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ea457458_5fe8_441a_903d_cc40f6611112'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.118'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ali/lidar_ws/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo-11:'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ali/lidar_ws/build/rplidar_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c9008729cb84ce135994bd5b67aa830e'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ali/lidar_ws/install/rplidar_ros:/opt/ros/humble')]), 'shell': False}
+[0.100514] (-) TimerEvent: {}
+[0.110075] (rplidar_ros) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.110386] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch\n'}
+[0.110555] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_tcp_launch.py\n'}
+[0.110644] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s2e_launch.py\n'}
+[0.110727] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_launch.py\n'}
+[0.110811] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a3_launch.py\n'}
+[0.110891] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_c1_launch.py\n'}
+[0.110971] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m12_launch.py\n'}
+[0.111051] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s2_launch.py\n'}
+[0.111134] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_t1_launch.py\n'}
+[0.111212] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m8_launch.py\n'}
+[0.111306] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a1_launch.py\n'}
+[0.111389] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m7_launch.py\n'}
+[0.111471] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s2_launch.py\n'}
+[0.111549] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m8_launch.py\n'}
+[0.111626] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a3_launch.py\n'}
+[0.111702] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s3_launch.py\n'}
+[0.111782] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_launch.py\n'}
+[0.111861] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a1_launch.py\n'}
+[0.111981] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m7_launch.py\n'}
+[0.112060] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_tcp_launch.py\n'}
+[0.112144] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_c1_launch.py\n'}
+[0.112227] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s3_launch.py\n'}
+[0.112455] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_t1_launch.py\n'}
+[0.112537] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s2e_launch.py\n'}
+[0.112621] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m12_launch.py\n'}
+[0.112704] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/rviz\n'}
+[0.112785] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/rviz/rplidar_ros.rviz\n'}
+[0.112865] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/lib/rplidar_ros/rplidar_node\n'}
+[0.112945] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/lib/rplidar_ros/rplidar_composition\n'}
+[0.113022] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/lib/rplidar_ros/rplidar_client\n'}
+[0.113099] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/ament_index/resource_index/package_run_dependencies/rplidar_ros\n'}
+[0.113211] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/ament_index/resource_index/parent_prefix_path/rplidar_ros\n'}
+[0.113313] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.sh\n'}
+[0.113390] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.dsv\n'}
+[0.113464] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/environment/path.sh\n'}
+[0.113541] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/environment/path.dsv\n'}
+[0.113617] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/local_setup.bash\n'}
+[0.113693] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/local_setup.sh\n'}
+[0.113775] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/local_setup.zsh\n'}
+[0.113854] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/local_setup.dsv\n'}
+[0.114012] (rplidar_ros) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/package.dsv\n'}
+[0.114096] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/ament_index/resource_index/packages/rplidar_ros\n'}
+[0.114176] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.114299] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.114581] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig.cmake\n'}
+[0.114767] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake\n'}
+[0.114866] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/ali/lidar_ws/install/rplidar_ros/share/rplidar_ros/package.xml\n'}
+[0.115198] (rplidar_ros) CommandEnded: {'returncode': 0}
+[0.121547] (laser_filters) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.125665] (rplidar_ros) JobEnded: {'identifier': 'rplidar_ros', 'rc': 0}
+[0.126726] (laser_filters) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.182994] (laser_filters) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.188213] (laser_filters) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.188477] (laser_filters) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.188785] (laser_filters) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.191988] (laser_filters) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.200604] (-) TimerEvent: {}
+[0.270520] (laser_filters) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.275742] (laser_filters) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.275993] (laser_filters) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.276370] (laser_filters) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.278375] (laser_filters) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[0.300716] (-) TimerEvent: {}
+[0.400812] (laser_filters) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.400984] (-) TimerEvent: {}
+[0.501222] (-) TimerEvent: {}
+[0.562716] (laser_filters) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.565693] (laser_filters) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.570898] (laser_filters) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.578379] (laser_filters) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.588500] (laser_filters) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.601330] (-) TimerEvent: {}
+[0.615958] (laser_filters) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.617489] (laser_filters) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.701481] (-) TimerEvent: {}
+[0.703127] (laser_filters) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.727261] (laser_filters) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.766331] (laser_filters) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.774498] (laser_filters) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.801685] (-) TimerEvent: {}
+[0.845717] (laser_filters) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.846050] (laser_filters) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.901799] (-) TimerEvent: {}
+[0.923371] (laser_filters) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.924502] (laser_filters) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.001904] (-) TimerEvent: {}
+[1.066657] (laser_filters) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.066829] (laser_filters) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.102011] (-) TimerEvent: {}
+[1.132333] (laser_filters) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[1.134777] (laser_filters) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[1.143330] (laser_filters) StdoutLine: {'line': b'-- Found launch_testing_ament_cmake: 1.0.7 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)\n'}
+[1.144614] (laser_filters) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.158930] (laser_filters) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.162811] (laser_filters) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.162932] (laser_filters) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.163014] (laser_filters) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.163090] (laser_filters) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.178152] (laser_filters) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.179085] (laser_filters) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.202141] (-) TimerEvent: {}
+[1.207351] (laser_filters) StdoutLine: {'line': b'-- Generating done\n'}
+[1.219244] (laser_filters) StdoutLine: {'line': b'-- Build files have been written to: /home/ali/lidar_ws/build/laser_filters\n'}
+[1.226141] (laser_filters) CommandEnded: {'returncode': 0}
+[1.226774] (laser_filters) JobProgress: {'identifier': 'laser_filters', 'progress': 'build'}
+[1.227844] (laser_filters) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ali/lidar_ws/build/laser_filters', '--', '-j16', '-l16'], 'cwd': '/home/ali/lidar_ws/build/laser_filters', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ali'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/ali'), ('OLDPWD', '/home/ali'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1496'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c9008729cb84ce135994bd5b67aa830e'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ali/lidar_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ali'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ali'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ali-Victus-by-HP-Gaming-Laptop-15-fa1xxx:@/tmp/.ICE-unix/1496,unix/ali-Victus-by-HP-Gaming-Laptop-15-fa1xxx:/tmp/.ICE-unix/1496'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ea457458_5fe8_441a_903d_cc40f6611112'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.118'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ali/lidar_ws/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo-11:'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ali/lidar_ws/build/laser_filters'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c9008729cb84ce135994bd5b67aa830e'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ali/lidar_ws/install/rplidar_ros:/opt/ros/humble')]), 'shell': False}
+[1.277149] (laser_filters) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/scan_to_cloud_filter_chain.dir/rclcpp_components/node_main_scan_to_cloud_filter_chain.cpp.o\x1b[0m\n'}
+[1.278252] (laser_filters) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[1.278893] (laser_filters) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/scan_to_scan_filter_chain.dir/rclcpp_components/node_main_scan_to_scan_filter_chain.cpp.o\x1b[0m\n'}
+[1.282086] (laser_filters) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[1.282225] (laser_filters) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/laser_scan_filters.dir/src/laser_scan_filters.cpp.o\x1b[0m\n'}
+[1.302256] (-) TimerEvent: {}
+[1.402536] (-) TimerEvent: {}
+[1.502829] (-) TimerEvent: {}
+[1.603141] (-) TimerEvent: {}
+[1.703473] (-) TimerEvent: {}
+[1.803776] (-) TimerEvent: {}
+[1.845570] (laser_filters) StdoutLine: {'line': b'[ 26%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[1.878696] (laser_filters) StdoutLine: {'line': b'[ 26%] Built target gtest_main\n'}
+[1.903900] (-) TimerEvent: {}
+[2.004199] (-) TimerEvent: {}
+[2.104452] (-) TimerEvent: {}
+[2.204733] (-) TimerEvent: {}
+[2.305028] (-) TimerEvent: {}
+[2.405347] (-) TimerEvent: {}
+[2.505666] (-) TimerEvent: {}
+[2.605972] (-) TimerEvent: {}
+[2.706331] (-) TimerEvent: {}
+[2.806586] (-) TimerEvent: {}
+[2.906896] (-) TimerEvent: {}
+[3.007264] (-) TimerEvent: {}
+[3.107509] (-) TimerEvent: {}
+[3.207860] (-) TimerEvent: {}
+[3.278027] (laser_filters) StdoutLine: {'line': b'[ 30%] \x1b[32m\x1b[1mLinking CXX executable scan_to_scan_filter_chain\x1b[0m\n'}
+[3.296185] (laser_filters) StdoutLine: {'line': b'[ 34%] \x1b[32m\x1b[1mLinking CXX executable scan_to_cloud_filter_chain\x1b[0m\n'}
+[3.307960] (-) TimerEvent: {}
+[3.373323] (laser_filters) StdoutLine: {'line': b'[ 34%] Built target scan_to_scan_filter_chain\n'}
+[3.401634] (laser_filters) StdoutLine: {'line': b'[ 34%] Built target scan_to_cloud_filter_chain\n'}
+[3.407949] (laser_filters) StdoutLine: {'line': b'[ 39%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[3.408103] (-) TimerEvent: {}
+[3.462394] (laser_filters) StdoutLine: {'line': b'[ 39%] Built target gtest\n'}
+[3.482350] (laser_filters) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/test_scan_filter_chain.dir/test/test_scan_filter_chain.cpp.o\x1b[0m\n'}
+[3.508324] (-) TimerEvent: {}
+[3.608736] (-) TimerEvent: {}
+[3.709150] (-) TimerEvent: {}
+[3.809604] (-) TimerEvent: {}
+[3.910021] (-) TimerEvent: {}
+[4.010415] (-) TimerEvent: {}
+[4.110748] (-) TimerEvent: {}
+[4.211140] (-) TimerEvent: {}
+[4.311526] (-) TimerEvent: {}
+[4.411858] (-) TimerEvent: {}
+[4.512256] (-) TimerEvent: {}
+[4.612554] (-) TimerEvent: {}
+[4.712845] (-) TimerEvent: {}
+[4.813136] (-) TimerEvent: {}
+[4.913318] (-) TimerEvent: {}
+[5.013571] (-) TimerEvent: {}
+[5.113929] (-) TimerEvent: {}
+[5.214286] (-) TimerEvent: {}
+[5.314583] (-) TimerEvent: {}
+[5.414961] (-) TimerEvent: {}
+[5.515309] (-) TimerEvent: {}
+[5.615601] (-) TimerEvent: {}
+[5.715939] (-) TimerEvent: {}
+[5.816369] (-) TimerEvent: {}
+[5.916690] (-) TimerEvent: {}
+[6.017050] (-) TimerEvent: {}
+[6.117357] (-) TimerEvent: {}
+[6.217693] (-) TimerEvent: {}
+[6.318011] (-) TimerEvent: {}
+[6.418434] (-) TimerEvent: {}
+[6.518743] (-) TimerEvent: {}
+[6.619152] (-) TimerEvent: {}
+[6.719638] (-) TimerEvent: {}
+[6.820302] (-) TimerEvent: {}
+[6.920742] (-) TimerEvent: {}
+[7.021163] (-) TimerEvent: {}
+[7.121454] (-) TimerEvent: {}
+[7.221746] (-) TimerEvent: {}
+[7.322098] (-) TimerEvent: {}
+[7.422370] (-) TimerEvent: {}
+[7.522662] (-) TimerEvent: {}
+[7.623022] (-) TimerEvent: {}
+[7.723295] (-) TimerEvent: {}
+[7.794267] (laser_filters) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking CXX executable test_scan_filter_chain\x1b[0m\n'}
+[7.823406] (-) TimerEvent: {}
+[7.923696] (-) TimerEvent: {}
+[7.994024] (laser_filters) StdoutLine: {'line': b'[ 47%] Built target test_scan_filter_chain\n'}
+[8.023824] (-) TimerEvent: {}
+[8.124225] (-) TimerEvent: {}
+[8.224568] (-) TimerEvent: {}
+[8.324899] (-) TimerEvent: {}
+[8.432871] (-) TimerEvent: {}
+[8.533254] (-) TimerEvent: {}
+[8.633554] (-) TimerEvent: {}
+[8.733832] (-) TimerEvent: {}
+[8.834157] (-) TimerEvent: {}
+[8.934421] (-) TimerEvent: {}
+[9.034789] (-) TimerEvent: {}
+[9.135083] (-) TimerEvent: {}
+[9.235449] (-) TimerEvent: {}
+[9.335730] (-) TimerEvent: {}
+[9.435981] (-) TimerEvent: {}
+[9.536249] (-) TimerEvent: {}
+[9.636515] (-) TimerEvent: {}
+[9.736792] (-) TimerEvent: {}
+[9.837068] (-) TimerEvent: {}
+[9.937426] (-) TimerEvent: {}
+[10.037786] (-) TimerEvent: {}
+[10.138194] (-) TimerEvent: {}
+[10.238566] (-) TimerEvent: {}
+[10.338897] (-) TimerEvent: {}
+[10.439286] (-) TimerEvent: {}
+[10.539700] (-) TimerEvent: {}
+[10.565422] (laser_filters) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking CXX shared library liblaser_scan_filters.so\x1b[0m\n'}
+[10.639829] (-) TimerEvent: {}
+[10.740190] (-) TimerEvent: {}
+[10.840481] (-) TimerEvent: {}
+[10.940731] (-) TimerEvent: {}
+[11.002676] (laser_filters) StdoutLine: {'line': b'[ 52%] Built target laser_scan_filters\n'}
+[11.022823] (laser_filters) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/laser_filter_chains.dir/src/scan_to_cloud_filter_chain.cpp.o\x1b[0m\n'}
+[11.023243] (laser_filters) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/test_shadow_detector.dir/test/test_shadow_detector.cpp.o\x1b[0m\n'}
+[11.024358] (laser_filters) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/test_scan_shadows_filter.dir/test/test_scan_shadows_filter.cpp.o\x1b[0m\n'}
+[11.025686] (laser_filters) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/laser_filter_chains.dir/src/scan_to_scan_filter_chain.cpp.o\x1b[0m\n'}
+[11.025818] (laser_filters) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/test_speckle_filter.dir/test/test_speckle_filter.cpp.o\x1b[0m\n'}
+[11.040840] (-) TimerEvent: {}
+[11.141246] (-) TimerEvent: {}
+[11.241537] (-) TimerEvent: {}
+[11.341880] (-) TimerEvent: {}
+[11.442224] (-) TimerEvent: {}
+[11.542540] (-) TimerEvent: {}
+[11.642899] (-) TimerEvent: {}
+[11.743241] (-) TimerEvent: {}
+[11.744542] (laser_filters) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX executable test_shadow_detector\x1b[0m\n'}
+[11.843360] (-) TimerEvent: {}
+[11.943726] (-) TimerEvent: {}
+[11.943962] (laser_filters) StdoutLine: {'line': b'[ 78%] Built target test_shadow_detector\n'}
+[12.043867] (-) TimerEvent: {}
+[12.144227] (-) TimerEvent: {}
+[12.244607] (-) TimerEvent: {}
+[12.345045] (-) TimerEvent: {}
+[12.445416] (-) TimerEvent: {}
+[12.545755] (-) TimerEvent: {}
+[12.646091] (-) TimerEvent: {}
+[12.746516] (-) TimerEvent: {}
+[12.846844] (-) TimerEvent: {}
+[12.947172] (-) TimerEvent: {}
+[13.047548] (-) TimerEvent: {}
+[13.147935] (-) TimerEvent: {}
+[13.248464] (-) TimerEvent: {}
+[13.348869] (-) TimerEvent: {}
+[13.449192] (-) TimerEvent: {}
+[13.549544] (-) TimerEvent: {}
+[13.649879] (-) TimerEvent: {}
+[13.750259] (-) TimerEvent: {}
+[13.847383] (laser_filters) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking CXX executable test_speckle_filter\x1b[0m\n'}
+[13.850396] (-) TimerEvent: {}
+[13.950824] (-) TimerEvent: {}
+[14.040350] (laser_filters) StdoutLine: {'line': b'[ 82%] Built target test_speckle_filter\n'}
+[14.050959] (-) TimerEvent: {}
+[14.151294] (-) TimerEvent: {}
+[14.251608] (-) TimerEvent: {}
+[14.257113] (laser_filters) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking CXX executable test_scan_shadows_filter\x1b[0m\n'}
+[14.351732] (-) TimerEvent: {}
+[14.452160] (-) TimerEvent: {}
+[14.466010] (laser_filters) StdoutLine: {'line': b'[ 86%] Built target test_scan_shadows_filter\n'}
+[14.552315] (-) TimerEvent: {}
+[14.652704] (-) TimerEvent: {}
+[14.753161] (-) TimerEvent: {}
+[14.853493] (-) TimerEvent: {}
+[14.953818] (-) TimerEvent: {}
+[15.054260] (-) TimerEvent: {}
+[15.154897] (-) TimerEvent: {}
+[15.255307] (-) TimerEvent: {}
+[15.355670] (-) TimerEvent: {}
+[15.455977] (-) TimerEvent: {}
+[15.556318] (-) TimerEvent: {}
+[15.656683] (-) TimerEvent: {}
+[15.757052] (-) TimerEvent: {}
+[15.857429] (-) TimerEvent: {}
+[15.957727] (-) TimerEvent: {}
+[16.058133] (-) TimerEvent: {}
+[16.158546] (-) TimerEvent: {}
+[16.258882] (-) TimerEvent: {}
+[16.359311] (-) TimerEvent: {}
+[16.459552] (-) TimerEvent: {}
+[16.559812] (-) TimerEvent: {}
+[16.660165] (-) TimerEvent: {}
+[16.760483] (-) TimerEvent: {}
+[16.860793] (-) TimerEvent: {}
+[16.961117] (-) TimerEvent: {}
+[17.061395] (-) TimerEvent: {}
+[17.161660] (-) TimerEvent: {}
+[17.261948] (-) TimerEvent: {}
+[17.362278] (-) TimerEvent: {}
+[17.462557] (-) TimerEvent: {}
+[17.562919] (-) TimerEvent: {}
+[17.663212] (-) TimerEvent: {}
+[17.763491] (-) TimerEvent: {}
+[17.863792] (-) TimerEvent: {}
+[17.964105] (-) TimerEvent: {}
+[18.064393] (-) TimerEvent: {}
+[18.164646] (-) TimerEvent: {}
+[18.264990] (-) TimerEvent: {}
+[18.365365] (-) TimerEvent: {}
+[18.465651] (-) TimerEvent: {}
+[18.565980] (-) TimerEvent: {}
+[18.666345] (-) TimerEvent: {}
+[18.766662] (-) TimerEvent: {}
+[18.866947] (-) TimerEvent: {}
+[18.967309] (-) TimerEvent: {}
+[19.067575] (-) TimerEvent: {}
+[19.167932] (-) TimerEvent: {}
+[19.268195] (-) TimerEvent: {}
+[19.368484] (-) TimerEvent: {}
+[19.468752] (-) TimerEvent: {}
+[19.569103] (-) TimerEvent: {}
+[19.669461] (-) TimerEvent: {}
+[19.769729] (-) TimerEvent: {}
+[19.870026] (-) TimerEvent: {}
+[19.970353] (-) TimerEvent: {}
+[20.070663] (-) TimerEvent: {}
+[20.171067] (-) TimerEvent: {}
+[20.271427] (-) TimerEvent: {}
+[20.371746] (-) TimerEvent: {}
+[20.472081] (-) TimerEvent: {}
+[20.562133] (laser_filters) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX shared library liblaser_filter_chains.so\x1b[0m\n'}
+[20.572195] (-) TimerEvent: {}
+[20.672499] (-) TimerEvent: {}
+[20.772900] (-) TimerEvent: {}
+[20.873246] (-) TimerEvent: {}
+[20.973635] (-) TimerEvent: {}
+[21.073977] (-) TimerEvent: {}
+[21.174419] (-) TimerEvent: {}
+[21.199407] (laser_filters) StdoutLine: {'line': b'[ 91%] Built target laser_filter_chains\n'}
+[21.220832] (laser_filters) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object CMakeFiles/generic_laser_filter_node.dir/src/generic_laser_filter_node.cpp.o\x1b[0m\n'}
+[21.274630] (-) TimerEvent: {}
+[21.374968] (-) TimerEvent: {}
+[21.475297] (-) TimerEvent: {}
+[21.575634] (-) TimerEvent: {}
+[21.675891] (-) TimerEvent: {}
+[21.776255] (-) TimerEvent: {}
+[21.876582] (-) TimerEvent: {}
+[21.976931] (-) TimerEvent: {}
+[22.077280] (-) TimerEvent: {}
+[22.177619] (-) TimerEvent: {}
+[22.277951] (-) TimerEvent: {}
+[22.378294] (-) TimerEvent: {}
+[22.478642] (-) TimerEvent: {}
+[22.578990] (-) TimerEvent: {}
+[22.679347] (-) TimerEvent: {}
+[22.779714] (-) TimerEvent: {}
+[22.880053] (-) TimerEvent: {}
+[22.980441] (-) TimerEvent: {}
+[23.080774] (-) TimerEvent: {}
+[23.181124] (-) TimerEvent: {}
+[23.281487] (-) TimerEvent: {}
+[23.381828] (-) TimerEvent: {}
+[23.482169] (-) TimerEvent: {}
+[23.582561] (-) TimerEvent: {}
+[23.682924] (-) TimerEvent: {}
+[23.783291] (-) TimerEvent: {}
+[23.883650] (-) TimerEvent: {}
+[23.983996] (-) TimerEvent: {}
+[24.084345] (-) TimerEvent: {}
+[24.184696] (-) TimerEvent: {}
+[24.285023] (-) TimerEvent: {}
+[24.385299] (-) TimerEvent: {}
+[24.485548] (-) TimerEvent: {}
+[24.585845] (-) TimerEvent: {}
+[24.686220] (-) TimerEvent: {}
+[24.786486] (-) TimerEvent: {}
+[24.886761] (-) TimerEvent: {}
+[24.987096] (-) TimerEvent: {}
+[25.087581] (-) TimerEvent: {}
+[25.187964] (-) TimerEvent: {}
+[25.288409] (-) TimerEvent: {}
+[25.388655] (-) TimerEvent: {}
+[25.488909] (-) TimerEvent: {}
+[25.589179] (-) TimerEvent: {}
+[25.689466] (-) TimerEvent: {}
+[25.789727] (-) TimerEvent: {}
+[25.889989] (-) TimerEvent: {}
+[25.990259] (-) TimerEvent: {}
+[26.090538] (-) TimerEvent: {}
+[26.190816] (-) TimerEvent: {}
+[26.291080] (-) TimerEvent: {}
+[26.391328] (-) TimerEvent: {}
+[26.491578] (-) TimerEvent: {}
+[26.591824] (-) TimerEvent: {}
+[26.692097] (-) TimerEvent: {}
+[26.792460] (-) TimerEvent: {}
+[26.892759] (-) TimerEvent: {}
+[26.993056] (-) TimerEvent: {}
+[27.093348] (-) TimerEvent: {}
+[27.193592] (-) TimerEvent: {}
+[27.293881] (-) TimerEvent: {}
+[27.394206] (-) TimerEvent: {}
+[27.494419] (-) TimerEvent: {}
+[27.594636] (-) TimerEvent: {}
+[27.694899] (-) TimerEvent: {}
+[27.795241] (-) TimerEvent: {}
+[27.895468] (-) TimerEvent: {}
+[27.995731] (-) TimerEvent: {}
+[28.095962] (-) TimerEvent: {}
+[28.196244] (-) TimerEvent: {}
+[28.296478] (-) TimerEvent: {}
+[28.396726] (-) TimerEvent: {}
+[28.497004] (-) TimerEvent: {}
+[28.597343] (-) TimerEvent: {}
+[28.697644] (-) TimerEvent: {}
+[28.798021] (-) TimerEvent: {}
+[28.898346] (-) TimerEvent: {}
+[28.998767] (-) TimerEvent: {}
+[29.099300] (-) TimerEvent: {}
+[29.199626] (-) TimerEvent: {}
+[29.231512] (laser_filters) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable generic_laser_filter_node\x1b[0m\n'}
+[29.299777] (-) TimerEvent: {}
+[29.400121] (-) TimerEvent: {}
+[29.500366] (-) TimerEvent: {}
+[29.600641] (-) TimerEvent: {}
+[29.700936] (-) TimerEvent: {}
+[29.709458] (laser_filters) StdoutLine: {'line': b'[100%] Built target generic_laser_filter_node\n'}
+[29.722748] (laser_filters) CommandEnded: {'returncode': 0}
+[29.723333] (laser_filters) JobProgress: {'identifier': 'laser_filters', 'progress': 'install'}
+[29.723620] (laser_filters) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ali/lidar_ws/build/laser_filters'], 'cwd': '/home/ali/lidar_ws/build/laser_filters', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ali'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/ali'), ('OLDPWD', '/home/ali'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1496'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c9008729cb84ce135994bd5b67aa830e'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ali/lidar_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ali'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ali'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ali-Victus-by-HP-Gaming-Laptop-15-fa1xxx:@/tmp/.ICE-unix/1496,unix/ali-Victus-by-HP-Gaming-Laptop-15-fa1xxx:/tmp/.ICE-unix/1496'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ea457458_5fe8_441a_903d_cc40f6611112'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.118'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ali/lidar_ws/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo-11:'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ali/lidar_ws/build/laser_filters'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c9008729cb84ce135994bd5b67aa830e'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ali/lidar_ws/install/rplidar_ros:/opt/ros/humble')]), 'shell': False}
+[29.732751] (laser_filters) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[29.733107] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/lib/laser_filters/scan_to_cloud_filter_chain\n'}
+[29.733390] (laser_filters) StdoutLine: {'line': b'-- Set runtime path of "/home/ali/lidar_ws/install/laser_filters/lib/laser_filters/scan_to_cloud_filter_chain" to ""\n'}
+[29.733585] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/lib/laser_filters/scan_to_scan_filter_chain\n'}
+[29.733844] (laser_filters) StdoutLine: {'line': b'-- Set runtime path of "/home/ali/lidar_ws/install/laser_filters/lib/laser_filters/scan_to_scan_filter_chain" to ""\n'}
+[29.734041] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/laser_filters_plugins.xml\n'}
+[29.734255] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/include\n'}
+[29.734523] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/include/laser_filters\n'}
+[29.734663] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/include/laser_filters/median_filter.h\n'}
+[29.734800] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/include/laser_filters/array_filter.h\n'}
+[29.734934] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/include/laser_filters/interpolation_filter.h\n'}
+[29.735059] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/include/laser_filters/intensity_filter.h\n'}
+[29.735258] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/include/laser_filters/angular_bounds_filter_in_place.h\n'}
+[29.735408] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/include/laser_filters/range_filter.h\n'}
+[29.735527] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/include/laser_filters/footprint_filter.h\n'}
+[29.735644] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/include/laser_filters/median_spatial_filter.h\n'}
+[29.735759] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/include/laser_filters/box_filter.h\n'}
+[29.735906] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/include/laser_filters/scan_shadow_detector.h\n'}
+[29.736013] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/include/laser_filters/scan_blob_filter.h\n'}
+[29.736113] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/include/laser_filters/scan_shadows_filter.h\n'}
+[29.736215] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/include/laser_filters/polygon_filter.h\n'}
+[29.736337] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/include/laser_filters/scan_mask_filter.h\n'}
+[29.736445] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/include/laser_filters/sector_filter.h\n'}
+[29.736547] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/include/laser_filters/angular_bounds_filter.h\n'}
+[29.736652] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/include/laser_filters/speckle_filter.h\n'}
+[29.736752] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/environment/library_path.sh\n'}
+[29.736845] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/environment/library_path.dsv\n'}
+[29.736938] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/lib/liblaser_scan_filters.so\n'}
+[29.740804] (laser_filters) StdoutLine: {'line': b'-- Set runtime path of "/home/ali/lidar_ws/install/laser_filters/lib/liblaser_scan_filters.so" to ""\n'}
+[29.740961] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/lib/liblaser_filter_chains.so\n'}
+[29.745650] (laser_filters) StdoutLine: {'line': b'-- Set runtime path of "/home/ali/lidar_ws/install/laser_filters/lib/liblaser_filter_chains.so" to ""\n'}
+[29.745745] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/lib/laser_filters/generic_laser_filter_node\n'}
+[29.748048] (laser_filters) StdoutLine: {'line': b'-- Set runtime path of "/home/ali/lidar_ws/install/laser_filters/lib/laser_filters/generic_laser_filter_node" to ""\n'}
+[29.748104] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples\n'}
+[29.748150] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/box_filter_example.yaml\n'}
+[29.748194] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/median_spatial_filter.launch.xml\n'}
+[29.748241] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/box_filter_example.launch.py\n'}
+[29.748285] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/range_filter_example.yaml\n'}
+[29.748332] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/intensity_filter_example.yaml\n'}
+[29.748362] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/intensity_filter_example.launch.py\n'}
+[29.748407] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/shadow_filter_example.yaml\n'}
+[29.748436] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/median_filter_example.launch.py\n'}
+[29.748480] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/scan_blob_filter_example.launch.py\n'}
+[29.748513] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/angular_filter_example.yaml\n'}
+[29.748558] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/polygon_filter_example.launch.py\n'}
+[29.748589] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/pass_through_example.launch.py\n'}
+[29.748634] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/speckle_filter_example.launch\n'}
+[29.748664] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/mask_filter_example.yaml\n'}
+[29.748706] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/median_spatial_filter.launch.py\n'}
+[29.748736] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/median_filter_example.yaml\n'}
+[29.748784] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/pass_through_example.yaml\n'}
+[29.748816] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/multiple_filters_example.launch.py\n'}
+[29.748860] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/range_filter_example.launch.py\n'}
+[29.748891] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/median_spatial_filter_example.yaml\n'}
+[29.748937] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/shadow_filter_example.launch.py\n'}
+[29.748966] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/sector_filter_example.launch.py\n'}
+[29.748995] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/speckle_filter_example.yaml\n'}
+[29.749039] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/sector_filter_example.yaml\n'}
+[29.749069] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/footprint_filter_example.launch.py\n'}
+[29.749113] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/footprint_filter_example.yaml\n'}
+[29.749152] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/angular_filter_example.launch.py\n'}
+[29.749183] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/mask_filter_example.launch.py\n'}
+[29.749236] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/polygon_filter_example.yaml\n'}
+[29.749268] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/scan_blob_filter_example.yaml\n'}
+[29.749297] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/examples/multiple_filters_example.yaml\n'}
+[29.749343] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/test\n'}
+[29.749373] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/test/test_scan_filter_chain.cpp\n'}
+[29.749411] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/test/test_polygon_filter.yaml\n'}
+[29.749459] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/test/test_speckle_filter.yaml\n'}
+[29.749490] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/test/test_scan_filter_chain.yaml\n'}
+[29.749535] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/test/test_scan_filter_chain.launch\n'}
+[29.749566] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/test/test_speckle_filter.cpp\n'}
+[29.749610] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/test/test_scan_shadows_filter.cpp\n'}
+[29.749645] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/test/test_shadow_detector.cpp\n'}
+[29.749683] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/test/fake_laser.py\n'}
+[29.749713] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/test/test_polygon_filter.test.py\n'}
+[29.749754] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/test/test_speckle_filter.test.py\n'}
+[29.749798] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/ament_index/resource_index/package_run_dependencies/laser_filters\n'}
+[29.749871] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/ament_index/resource_index/parent_prefix_path/laser_filters\n'}
+[29.749923] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/environment/ament_prefix_path.sh\n'}
+[29.749970] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/environment/ament_prefix_path.dsv\n'}
+[29.750017] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/environment/path.sh\n'}
+[29.750063] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/environment/path.dsv\n'}
+[29.750109] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/local_setup.bash\n'}
+[29.750154] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/local_setup.sh\n'}
+[29.750204] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/local_setup.zsh\n'}
+[29.750270] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/local_setup.dsv\n'}
+[29.750397] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/package.dsv\n'}
+[29.750479] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/ament_index/resource_index/packages/laser_filters\n'}
+[29.750577] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/ament_index/resource_index/filters__pluginlib__plugin/laser_filters\n'}
+[29.750690] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/ament_index/resource_index/rclcpp_components/laser_filters\n'}
+[29.750817] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[29.750902] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[29.750976] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[29.751049] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/cmake/laser_filtersConfig.cmake\n'}
+[29.751122] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/cmake/laser_filtersConfig-version.cmake\n'}
+[29.751196] (laser_filters) StdoutLine: {'line': b'-- Installing: /home/ali/lidar_ws/install/laser_filters/share/laser_filters/package.xml\n'}
+[29.752526] (laser_filters) CommandEnded: {'returncode': 0}
+[29.761500] (laser_filters) JobEnded: {'identifier': 'laser_filters', 'rc': 0}
+[29.762104] (-) EventReactorShutdown: {}
